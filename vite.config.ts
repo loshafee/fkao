@@ -5,6 +5,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/fkao/',
+  build: {
+    outDir: 'docs',
+  },
   plugins: [
     react(),
     // basicSsl(),
@@ -21,7 +25,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '.',
+        start_url: '/fkao/',
+        scope: '/fkao/',
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
