@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdfcf9"/>
+      <stop offset="100%" style="stop-color:#f4f1e8"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b3a5c"/>
+      <stop offset="100%" style="stop-color:#152e4a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37"/>
+      <stop offset="50%" style="stop-color:#c49b2c"/>
+      <stop offset="100%" style="stop-color:#a67c1e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer rounded square background -->
+  <rect x="20" y="20" width="472" height="472" rx="96" ry="96" fill="url(#bg)"/>
+  <rect x="20" y="20" width="472" height="472" rx="96" ry="96" fill="none" stroke="#d4c9a8" stroke-width="3"/>
+
+  <!-- Central emblem: circular badge -->
+  <circle cx="256" cy="218" r="140" fill="url(#badge)"/>
+  <circle cx="256" cy="218" r="140" fill="none" stroke="url(#gold)" stroke-width="4"/>
+
+  <!-- Book base (考 = study/exam) -->
+  <g transform="translate(256, 288)" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Book spine -->
+    <line x1="0" y1="-32" x2="0" y2="10"/>
+    <!-- Left page -->
+    <path d="M-2,-32 L-58,-24 L-58,14 L-2,10" fill="url(#gold)" opacity="0.15"/>
+    <path d="M-2,-32 L-58,-24 L-58,14 L-2,10"/>
+    <!-- Right page -->
+    <path d="M2,-32 L58,-24 L58,14 L2,10" fill="url(#gold)" opacity="0.25"/>
+    <path d="M2,-32 L58,-24 L58,14 L2,10"/>
+    <!-- Book top edge -->
+    <line x1="-58" y1="-24" x2="58" y2="-24"/>
+    <!-- Book bottom edge -->
+    <line x1="-58" y1="14" x2="58" y2="14"/>
+  </g>
+
+  <!-- Scales (法 = law) above the book -->
+  <g transform="translate(256, 200)" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Central pillar -->
+    <line x1="0" y1="-90" x2="0" y2="60"/>
+    <!-- Beam -->
+    <line x1="-130" y1="-90" x2="130" y2="-90"/>
+    <!-- Left arm -->
+    <line x1="-130" y1="-90" x2="-130" y2="-40"/>
+    <!-- Right arm -->
+    <line x1="130" y1="-90" x2="130" y2="-40"/>
+    <!-- Left pan -->
+    <path d="M-185,-40 Q-130,-65 -75,-40"/>
+    <!-- Right pan -->
+    <path d="M75,-40 Q130,-65 185,-40"/>
+    <!-- Fulcrum circle -->
+    <circle cx="0" cy="-90" r="10" fill="url(#gold)"/>
+  </g>
+
+  <!-- 法考 text -->
+  <text x="256" y="420" text-anchor="middle" font-family="'STSong','SimSun','Songti SC','Noto Serif CJK SC',serif" font-size="72" font-weight="bold" fill="#1b3a5c" letter-spacing="24">法考</text>
+
+  <!-- Subtle divider between emblem and text -->
+  <line x1="160" y1="450" x2="352" y2="450" stroke="#d4c9a8" stroke-width="1.5"/>
+</svg>
