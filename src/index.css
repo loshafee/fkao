@@ -1362,3 +1362,383 @@ button {
     background: var(--card-bg);
   }
 }
+
+/* ===== 背诵笔记 ===== */
+.notes-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+}
+
+.notes-page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.notes-page-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.notes-tier-group {
+  margin-bottom: 28px;
+}
+
+.notes-tier-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.notes-subject-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.notes-subject-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 15px;
+}
+
+.notes-subject-card:hover {
+  border-color: var(--primary);
+  background: #f0f7ff;
+}
+
+.notes-subject-icon {
+  font-size: 20px;
+}
+
+.notes-subject-name {
+  font-weight: 500;
+}
+
+.notes-subject-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.notes-subject-time {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+/* Detail */
+.notes-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 16px 80px;
+}
+
+.notes-back-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 12px;
+}
+
+.notes-detail-header {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.notes-detail-header h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.notes-detail-header p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 2px 0;
+}
+
+/* Module Tabs */
+.notes-module-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.notes-module-tab {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.notes-module-tab.active {
+  background: #e8f0fe;
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.notes-module-content {
+  min-height: 300px;
+}
+
+/* Exam Points */
+.notes-exam-card {
+  padding: 14px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.notes-exam-name {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.notes-exam-stars {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.notes-exam-info {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Concepts */
+.notes-concept-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.notes-concept-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--card-bg);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.notes-concept-arrow {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.notes-concept-body {
+  padding: 16px;
+  border-top: 1px solid var(--border);
+  background: #fafafa;
+}
+
+.notes-concept-def {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.notes-concept-kw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.notes-kw-tag {
+  padding: 3px 10px;
+  background: #e8f0fe;
+  color: #1967d2;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.notes-concept-exam {
+  font-size: 13px;
+  color: #e37400;
+  margin-bottom: 10px;
+}
+
+.notes-concept-point {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #444;
+  margin: 2px 0;
+}
+
+.notes-concept-case {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #fff8e1;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Comparisons */
+.notes-comp-table {
+  margin-bottom: 24px;
+}
+
+.notes-comp-table h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.notes-comp-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.notes-comp-table th {
+  background: #f5f5f5;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.notes-comp-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+/* Mnemonics */
+.notes-mnemonic-card {
+  padding: 14px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.notes-mnemonic-topic {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.notes-mnemonic-rhyme {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.notes-mnemonic-meaning {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Traps */
+.notes-trap-item {
+  padding: 14px 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.notes-trap-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.notes-trap-wrong {
+  color: #d93025;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.notes-trap-correct {
+  color: #0d904f;
+  font-size: 13px;
+}
+
+/* Key Numbers */
+.notes-kv-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.notes-kv-num {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--primary);
+  min-width: 80px;
+}
+
+.notes-kv-meaning {
+  font-size: 14px;
+}
+
+/* 2026 Updates */
+.notes-update-card {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.notes-update-card.priority-red {
+  background: #fce8e6;
+  border: 1px solid #f5c6c2;
+}
+
+.notes-update-card.priority-yellow {
+  background: #fef7e0;
+  border: 1px solid #feefc3;
+}
+
+.notes-update-card.priority-green {
+  background: #e6f4ea;
+  border: 1px solid #ceead6;
+}
+
+.notes-update-content {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.notes-update-points {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.notes-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}

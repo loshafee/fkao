@@ -121,6 +121,9 @@ export default function HomePage() {
       </button>
 
       <div className="quick-links">
+        <button className="btn-secondary" onClick={() => navigate('/notes')}>
+          📖 背诵笔记
+        </button>
         <button className="btn-secondary" onClick={() => navigate('/wrongbook')}>
           错题本 {wrongBook.length > 0 && <span className="badge">{wrongBook.length}</span>}
         </button>

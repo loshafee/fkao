@@ -6,6 +6,7 @@ import ResultPage from './pages/ResultPage';
 import HistoryPage from './pages/HistoryPage';
 import WrongBookPage from './pages/WrongBookPage';
 import HistoryDetailPage from './pages/HistoryDetailPage';
+import NotesPage from './pages/NotesPage';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/history/:index" element={<HistoryDetailPage />} />
             <Route path="/wrongbook" element={<WrongBookPage />} />
+            <Route path="/notes" element={<NotesPage />} />
           </Routes>
         </div>
       </HashRouter>
